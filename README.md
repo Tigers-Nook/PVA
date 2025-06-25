@@ -8,4 +8,6 @@ Visão geral: 
 
  Gênero: Puzzle 2D; Visual Novel; Humor satírico; quick-time event; Stealth
 
- Referências e Inspirações: Office Lover Kiss; Escoria
+ Referências e Inspirações: Office Lover Kiss; Escoria Godot
+
+ Engine e Tecnologias: Godot Engine, GDScript
