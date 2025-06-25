@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmck81egipiws"]
+
+[ext_resource type="Script" uid="uid://dpeamab1dsobi" path="res://Scripts/QTEOverlay.gd" id="1_wx0ju"]
+
+[sub_resource type="Theme" id="Theme_w4m0g"]
+
+[node name="QTEOverlay" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_w4m0g")
+script = ExtResource("1_wx0ju")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.333333)
+
+[node name="QTEBox" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="QTEBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="QTEBox/VBoxContainer"]
+layout_mode = 2
+text = "EVENTO DE TEMPO RÁPIDO!"
+
+[node name="QTEKeyDisplay" type="Label" parent="QTEBox/VBoxContainer"]
+layout_mode = 2
+text = "Pressione a tecla \"X\""
+
+[node name="QTEProgressBar" type="ProgressBar" parent="QTEBox/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="QTEBox/VBoxContainer/QTEProgressBar"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="QTETimerText" type="Label" parent="QTEBox/VBoxContainer"]
+layout_mode = 2
+text = "Tempo restante: 0,0s"
