@@ -1,4 +1,4 @@
-# PVA
+# Simulador de Pai Viciado em Apostas
 Visão geral: 
 
  O jogo é um simulador satírico que explora o impacto devastador do vício em apostas online em uma família. O jogador assume o papel de um pai que tenta esconder sua compulsão enquanto busca maneiras criativas e questionáveis de continuar apostando.. 
