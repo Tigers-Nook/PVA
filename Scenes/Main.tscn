@@ -2,17 +2,15 @@
 
 [ext_resource type="Script" uid="uid://hfos6iqcmwk0" path="res://Scripts/Main.gd" id="1_kln2b"]
 [ext_resource type="PackedScene" uid="uid://buoqoyf8imjgc" path="res://Scenes/Room.tscn" id="2_rgh2o"]
-[ext_resource type="Texture2D" uid="uid://ddye2pecapfc7" path="res://Assets/Rooms/LivingRoom/room1background.png" id="3_rgh2o"]
-[ext_resource type="Texture2D" uid="uid://3mwyoi2cosa4" path="res://Assets/Items/Pixelart-tv.png" id="4_jw32o"]
+[ext_resource type="Texture2D" uid="uid://b5iqkcri1k60e" path="res://Assets/Scenario/salaDeEstar.png" id="3_50glp"]
 [ext_resource type="Texture2D" uid="uid://c0xmgcmdx3j0g" path="res://Assets/Scenario/pngtree-blue-sofa-in-pixel-art-style-png-image_12528469.png" id="5_50glp"]
+[ext_resource type="Texture2D" uid="uid://cxmw3ur1jgsl" path="res://Assets/Items/TV_e_rack-removebg-preview.png" id="5_vy5pj"]
+[ext_resource type="Texture2D" uid="uid://rcwbm878ade7" path="res://Assets/Items/TV-removebg-preview.png" id="6_bmxlf"]
 [ext_resource type="Texture2D" uid="uid://bey4txmqyusj8" path="res://Assets/Personagens/garoto_aranha.png" id="6_vy5pj"]
 [ext_resource type="Texture2D" uid="uid://iv70orjh3y3c" path="res://Assets/Personagens/pai2-Recovered-png.png" id="7_bmxlf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ke1vn"]
 size = Vector2(220.563, 130)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jw32o"]
-size = Vector2(328, 360)
 
 [node name="MainScene" type="Control"]
 layout_mode = 3
@@ -24,13 +22,47 @@ grow_vertical = 2
 script = ExtResource("1_kln2b")
 
 [node name="SalaDeEstar" parent="." instance=ExtResource("2_rgh2o")]
+position = Vector2(152, 0)
 
 [node name="Background2D" type="Sprite2D" parent="SalaDeEstar"]
-position = Vector2(616, 848)
-scale = Vector2(0.96875, 1.87778)
-texture = ExtResource("3_rgh2o")
+position = Vector2(744, 536)
+scale = Vector2(0.747708, 0.666945)
+texture = ExtResource("3_50glp")
+
+[node name="Sofa" type="Area2D" parent="SalaDeEstar"]
+
+[node name="ArteSofa" type="Sprite2D" parent="SalaDeEstar/Sofa"]
+position = Vector2(992, 616)
+scale = Vector2(1.53333, 1.25556)
+texture = ExtResource("5_50glp")
+
+[node name="Button_navegar2" type="Button" parent="SalaDeEstar"]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="TV2" type="Area2D" parent="SalaDeEstar"]
+position = Vector2(40, 64)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SalaDeEstar/TV2"]
+visible = false
+position = Vector2(920, 496)
+shape = SubResource("RectangleShape2D_ke1vn")
+debug_color = Color(0.241635, 0.636496, 0, 0.42)
+
+[node name="Button_Item" type="Button" parent="SalaDeEstar/TV2"]
+offset_left = 1000.0
+offset_top = 48.0
+offset_right = 1065.0
+offset_bottom = 79.0
+text = "Roubar"
+
+[node name="ArteItem" type="Sprite2D" parent="SalaDeEstar/TV2"]
+position = Vector2(1312, 536)
+scale = Vector2(2.31878, 1.58702)
+texture = ExtResource("5_vy5pj")
 
 [node name="TV" type="Area2D" parent="SalaDeEstar"]
+position = Vector2(40, 64)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SalaDeEstar/TV"]
 visible = false
@@ -39,29 +71,21 @@ shape = SubResource("RectangleShape2D_ke1vn")
 debug_color = Color(0.241635, 0.636496, 0, 0.42)
 
 [node name="Button_Item" type="Button" parent="SalaDeEstar/TV"]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 1224.0
+offset_top = 320.0
+offset_right = 1289.0
+offset_bottom = 351.0
+text = "Roubar"
 
 [node name="ArteItem" type="Sprite2D" parent="SalaDeEstar/TV"]
-position = Vector2(168, 528)
-scale = Vector2(1.45007, 1.17403)
-texture = ExtResource("4_jw32o")
-
-[node name="Sofa" type="Area2D" parent="SalaDeEstar"]
-
-[node name="ArteSofa" type="Sprite2D" parent="SalaDeEstar/Sofa"]
-position = Vector2(680, 600)
-scale = Vector2(1.53333, 1.25556)
-texture = ExtResource("5_50glp")
-
-[node name="Button_navegar2" type="Button" parent="SalaDeEstar"]
-offset_right = 8.0
-offset_bottom = 8.0
+position = Vector2(896, 152)
+scale = Vector2(0.702628, 0.605196)
+texture = ExtResource("6_bmxlf")
 
 [node name="Garoto" type="CharacterBody2D" parent="SalaDeEstar"]
 
 [node name="ArteGaroto" type="Sprite2D" parent="SalaDeEstar/Garoto"]
-position = Vector2(608, 552)
+position = Vector2(1064, 552)
 texture = ExtResource("6_vy5pj")
 
 [node name="Cozinha" parent="." instance=ExtResource("2_rgh2o")]
@@ -79,38 +103,6 @@ offset_left = 280.0
 offset_top = 120.0
 offset_right = 288.0
 offset_bottom = 128.0
-
-[node name="StartScreen" type="Control" parent="."]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Titulo" type="Label" parent="StartScreen"]
-layout_mode = 0
-offset_left = 528.0
-offset_top = 8.0
-offset_right = 653.0
-offset_bottom = 31.0
-text = "O Vício do Papai"
-
-[node name="SubTitulo" type="Label" parent="StartScreen"]
-layout_mode = 0
-offset_left = 448.0
-offset_top = 32.0
-offset_right = 744.0
-offset_bottom = 107.0
-text = "Um simulador satírico de um pai 
-que faz de tudo para sustentar 
-seu vício em apostas..."
-horizontal_alignment = 1
-
-[node name="StartGameButton" type="Button" parent="StartScreen"]
-layout_mode = 0
-offset_left = 504.0
-offset_top = 112.0
-offset_right = 680.0
-offset_bottom = 144.0
-text = "Começar Jogo"
 
 [node name="GameInterface" type="Control" parent="."]
 anchors_preset = 0
@@ -140,10 +132,10 @@ horizontal_alignment = 1
 
 [node name="gameMessage" type="Label" parent="GameInterface"]
 layout_mode = 0
-offset_left = 128.0
-offset_top = 312.0
-offset_right = 313.0
-offset_bottom = 387.0
+offset_left = 1296.0
+offset_top = 232.0
+offset_right = 1481.0
+offset_bottom = 307.0
 text = "
 Procure algo de valor
 para conseguir dinheiro"
@@ -175,10 +167,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1152.0
-offset_top = 424.0
-offset_right = 1186.0
-offset_bottom = 424.0
+offset_left = 1552.0
+offset_top = 280.0
+offset_right = 1753.0
+offset_bottom = 298.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -194,23 +186,59 @@ layout_mode = 2
 
 [node name="Button_Navigation" type="Button" parent="GameInterface/Navigation/VBoxContainer/NavigationButtons"]
 layout_mode = 2
+text = "COZINHA"
+
+[node name="Button_Navigation2" type="Button" parent="GameInterface/Navigation/VBoxContainer/NavigationButtons"]
+layout_mode = 2
+text = "QUARTO DO CASAL"
+
+[node name="Navigation2" type="PanelContainer" parent="GameInterface"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 304.0
+offset_right = 209.0
+offset_bottom = 322.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameInterface/Navigation2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="GameInterface/Navigation2/VBoxContainer"]
+layout_mode = 2
+text = "Sair para:"
+
+[node name="NavigationButtons" type="HBoxContainer" parent="GameInterface/Navigation2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button_Navigation" type="Button" parent="GameInterface/Navigation2/VBoxContainer/NavigationButtons"]
+layout_mode = 2
+text = "COZINHA"
+
+[node name="Button_Navigation2" type="Button" parent="GameInterface/Navigation2/VBoxContainer/NavigationButtons"]
+layout_mode = 2
+text = "QUARTO DO CASAL"
 
 [node name="FamilyMoveTimer" type="Timer" parent="GameInterface"]
 
 [node name="QTEOverlay" type="Control" parent="."]
 visible = false
 anchors_preset = 0
-offset_left = 16.0
-offset_top = 128.0
-offset_right = 56.0
-offset_bottom = 168.0
+offset_left = 632.0
+offset_top = 184.0
+offset_right = 672.0
+offset_bottom = 224.0
 
 [node name="chave" type="Label" parent="QTEOverlay"]
 layout_mode = 0
-offset_left = 104.0
-offset_top = 80.0
-offset_right = 144.0
-offset_bottom = 103.0
+offset_left = 496.0
+offset_top = -8.0
+offset_right = 548.0
+offset_bottom = 15.0
+text = "CHAVE    "
 
 [node name="temporizadorTexture" type="TextureProgressBar" parent="QTEOverlay"]
 layout_mode = 0
@@ -230,18 +258,20 @@ offset_bottom = 51.0
 
 [node name="Button_QTE" type="Button" parent="QTEOverlay"]
 layout_mode = 0
-offset_left = 200.0
-offset_top = 48.0
-offset_right = 208.0
-offset_bottom = 56.0
+offset_left = 312.0
+offset_top = 32.0
+offset_right = 724.0
+offset_bottom = 86.0
+text = "MOMENTO MÃOS LEVES
+Pressiona a tecla \"X\" para pegar o item rapidamente"
 
 [node name="GameOverScreen" type="Control" parent="."]
 visible = false
 anchors_preset = 0
-offset_left = 16.0
-offset_top = 16.0
-offset_right = 56.0
-offset_bottom = 56.0
+offset_left = 72.0
+offset_top = -80.0
+offset_right = 112.0
+offset_bottom = -40.0
 
 [node name="GameOverMessage" type="Label" parent="GameOverScreen"]
 layout_mode = 0
@@ -261,14 +291,46 @@ offset_right = 656.0
 offset_bottom = 423.0
 text = "Jogar Novamente"
 
+[node name="StartScreen" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 168.0
+offset_top = 104.0
+offset_right = 472.0
+offset_bottom = 280.0
+
+[node name="Titulo" type="Label" parent="StartScreen"]
+layout_mode = 0
+offset_left = 456.0
+offset_top = -40.0
+offset_right = 808.0
+offset_bottom = 7.0
+text = "Simulador de Pai Viciado em Apostas"
+vertical_alignment = 1
+
+[node name="SubTitulo" type="Label" parent="StartScreen"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 32.0
+offset_right = 744.0
+offset_bottom = 107.0
+text = "Um simulador satírico de um pai 
+que faz de tudo para sustentar 
+seu vício em apostas..."
+horizontal_alignment = 1
+
+[node name="StartGameButton" type="Button" parent="StartScreen"]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 112.0
+offset_right = 680.0
+offset_bottom = 144.0
+text = "Começar Jogo"
+
 [node name="Pai" type="CharacterBody2D" parent="."]
 
 [node name="ArtePai" type="Sprite2D" parent="Pai"]
-position = Vector2(296, 680)
+position = Vector2(704, 712)
 scale = Vector2(0.647619, 0.635714)
 texture = ExtResource("7_bmxlf")
 
-[node name="CollisionShape2D_Garoto" type="CollisionShape2D" parent="Pai"]
-visible = false
-position = Vector2(164, 860)
-shape = SubResource("RectangleShape2D_jw32o")
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

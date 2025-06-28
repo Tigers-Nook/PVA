@@ -3,7 +3,7 @@ extends Node
 extends Area2D
 
 @export var item_value = 5
-@export var item_name = "Item Genérico"
+    @export var item_name = "TV"
 var found = false
 
 signal item_clicked(item_node)
