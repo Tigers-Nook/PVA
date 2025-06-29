@@ -4,8 +4,8 @@ extends Node
 extends Node2D
 
 # --- Nós da UI (conectados via @onready) ---
-@onready var start_screen = $StartScreen
-@onready var start_game_button = $StartScreen/StartGameButton
+@onready var menu = $menu
+@onready var start_game_button = $menu/StartGameButton
 @onready var game_interface = $GameInterface
 @onready var money_display = $GameInterface/PanelContainer/VBoxContainer/HBoxContainer/MoneyLabel
 @onready var caught_count_display = $GameInterface/PanelContainer/VBoxContainer/HBoxContainer/CaughtCountLabel
@@ -59,7 +59,7 @@ func start_game():
     current_room_key = "livingRoom" # Redefine a sala do jogador
     qte_target_item_key = ""
     
-    start_screen.visible = false
+    menu.visible = false
     game_interface.visible = true
     game_over_screen.visible = false
     qte_overlay.visible = false # Garante que o QTE esteja escondido

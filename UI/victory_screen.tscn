@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://b4khrexqcefr1"]
+
+[node name="VictoryScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 72.0
+offset_top = -80.0
+offset_right = 112.0
+offset_bottom = -40.0
+
+[node name="VictoryMessage" type="Label" parent="."]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 272.0
+offset_right = 716.0
+offset_bottom = 321.0
+text = "Parabéns! Você conseguiu o dinheiro para
+continuar apostando. Que vergonha..."
+horizontal_alignment = 1
+
+[node name="RetartGameButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 336.0
+offset_right = 656.0
+offset_bottom = 423.0
+text = "Jogar Novamente"

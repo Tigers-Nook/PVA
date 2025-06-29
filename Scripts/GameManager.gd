@@ -1,7 +1,6 @@
 extends Node
 # GameManager.gd
 # Este script é um singleton (Autoload) que gerencia o estado global do jogo.
-extends Node
 
 # --- Variáveis de Estado do Jogo ---
 var money = 0          # Dinheiro atual do jogador

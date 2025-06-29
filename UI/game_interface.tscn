@@ -1,0 +1,122 @@
+[gd_scene format=3 uid="uid://b5fyqtaoetbv2"]
+
+[node name="GameInterface" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background"]
+layout_mode = 2
+
+[node name="Dinheiro e Pegadas" type="HBoxContainer" parent="Background/VBoxContainer"]
+layout_mode = 2
+
+[node name="moneyDisplay" type="Label" parent="Background/VBoxContainer/Dinheiro e Pegadas"]
+layout_mode = 2
+text = "Dinheiro: R$0"
+horizontal_alignment = 1
+
+[node name="caughtCountDisplay" type="Label" parent="Background/VBoxContainer/Dinheiro e Pegadas"]
+layout_mode = 2
+text = "Pego 0 de 3 vezes"
+horizontal_alignment = 1
+
+[node name="gameMessage" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1296.0
+offset_top = 232.0
+offset_right = 1481.0
+offset_bottom = 307.0
+text = "
+Procure algo de valor
+para conseguir dinheiro"
+
+[node name="SalaAtual" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 136.0
+offset_right = 115.0
+offset_bottom = 189.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SalaAtual"]
+layout_mode = 2
+
+[node name="RoomTitle" type="Label" parent="SalaAtual/VBoxContainer"]
+layout_mode = 2
+text = "Sala de estar
+"
+
+[node name="FamilyAlert" type="Label" parent="SalaAtual/VBoxContainer"]
+layout_mode = 2
+text = "Há um familiar na sala!"
+
+[node name="ItemActions" type="GridContainer" parent="SalaAtual/VBoxContainer"]
+layout_mode = 2
+
+[node name="Navigation" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1552.0
+offset_top = 280.0
+offset_right = 1753.0
+offset_bottom = 298.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Navigation"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Navigation/VBoxContainer"]
+layout_mode = 2
+text = "Sair para:"
+
+[node name="NavigationButtons" type="HBoxContainer" parent="Navigation/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button_Navigation" type="Button" parent="Navigation/VBoxContainer/NavigationButtons"]
+layout_mode = 2
+text = "COZINHA"
+
+[node name="Button_Navigation2" type="Button" parent="Navigation/VBoxContainer/NavigationButtons"]
+layout_mode = 2
+text = "QUARTO DO CASAL"
+
+[node name="Navigation2" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 304.0
+offset_right = 209.0
+offset_bottom = 322.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Navigation2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Navigation2/VBoxContainer"]
+layout_mode = 2
+text = "Sair para:"
+
+[node name="NavigationButtons" type="HBoxContainer" parent="Navigation2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button_Navigation" type="Button" parent="Navigation2/VBoxContainer/NavigationButtons"]
+layout_mode = 2
+text = "COZINHA"
+
+[node name="Button_Navigation2" type="Button" parent="Navigation2/VBoxContainer/NavigationButtons"]
+layout_mode = 2
+text = "QUARTO DO CASAL"
+
+[node name="FamilyMoveTimer" type="Timer" parent="."]

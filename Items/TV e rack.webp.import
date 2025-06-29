@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxmw3ur1jgsl"
-path="res://.godot/imported/TV_e_rack-removebg-preview.png-a6ca02e7f63762006189a42627a23978.ctex"
+uid="uid://cvvt05s17ptce"
+path="res://.godot/imported/TV e rack.webp-3abfb61dd0d015f5dacf30a92eb5f967.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Items/TV_e_rack-removebg-preview.png"
-dest_files=["res://.godot/imported/TV_e_rack-removebg-preview.png-a6ca02e7f63762006189a42627a23978.ctex"]
+source_file="res://Items/TV e rack.webp"
+dest_files=["res://.godot/imported/TV e rack.webp-3abfb61dd0d015f5dacf30a92eb5f967.ctex"]
 
 [params]
 

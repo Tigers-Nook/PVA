@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://k75h8xb6upv8"]
+
+[ext_resource type="Script" uid="uid://ug2kkse3yngd" path="res://Rooms/menu.gd" id="1_1rerr"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 168.0
+offset_top = 104.0
+offset_right = 472.0
+offset_bottom = 280.0
+script = ExtResource("1_1rerr")
+
+[node name="Titulo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 456.0
+offset_top = -40.0
+offset_right = 808.0
+offset_bottom = 7.0
+text = "Simulador de Pai Viciado em Apostas"
+vertical_alignment = 1
+
+[node name="SubTitulo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 16.0
+offset_right = 736.0
+offset_bottom = 91.0
+text = "Um simulador satírico de um pai 
+que faz de tudo para sustentar 
+seu vício em apostas..."
+horizontal_alignment = 1
+
+[node name="StartGameButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 104.0
+offset_right = 680.0
+offset_bottom = 136.0
+text = "Começar Jogo"

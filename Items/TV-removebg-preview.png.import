@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bx6yw13a76xbx"
-path="res://.godot/imported/TV.jpg-cfe1ee8d709b8ac1abcff089bb2dfb0c.ctex"
+uid="uid://rcwbm878ade7"
+path="res://.godot/imported/TV-removebg-preview.png-908eb23a6268e885289c2e1bb8611531.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Items/TV.jpg"
-dest_files=["res://.godot/imported/TV.jpg-cfe1ee8d709b8ac1abcff089bb2dfb0c.ctex"]
+source_file="res://Items/TV-removebg-preview.png"
+dest_files=["res://.godot/imported/TV-removebg-preview.png-908eb23a6268e885289c2e1bb8611531.ctex"]
 
 [params]
 

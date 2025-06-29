@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3mwyoi2cosa4"
-path="res://.godot/imported/Pixelart-tv.png-e17c3791920d39d69f6be84e80aee4ec.ctex"
+uid="uid://cxmw3ur1jgsl"
+path="res://.godot/imported/TV_e_rack-removebg-preview.png-dfe492d8cf70368edd4be434ad9f70c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Items/Pixelart-tv.png"
-dest_files=["res://.godot/imported/Pixelart-tv.png-e17c3791920d39d69f6be84e80aee4ec.ctex"]
+source_file="res://Items/TV_e_rack-removebg-preview.png"
+dest_files=["res://.godot/imported/TV_e_rack-removebg-preview.png-dfe492d8cf70368edd4be434ad9f70c0.ctex"]
 
 [params]
 
