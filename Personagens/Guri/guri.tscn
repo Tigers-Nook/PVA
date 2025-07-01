@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://xlvjb26h6qfm"]
 
-[ext_resource type="Texture2D" uid="uid://bey4txmqyusj8" path="res://Assets/Personagens/garoto_aranha.png" id="1_ksjio"]
+[ext_resource type="Texture2D" uid="uid://dabv4jm35f15n" path="res://Personagens/Guri/guri_aranha.png" id="1_x2640"]
 
-[node name="Garoto" type="CharacterBody2D"]
+[node name="Guri" type="CharacterBody2D"]
 
-[node name="ArteGaroto" type="Sprite2D" parent="."]
+[node name="ArteGuri" type="Sprite2D" parent="."]
 position = Vector2(1064, 552)
-texture = ExtResource("1_ksjio")
+texture = ExtResource("1_x2640")

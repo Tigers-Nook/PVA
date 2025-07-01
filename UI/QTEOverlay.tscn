@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cmck81egipiws"]
 
-[ext_resource type="Script" uid="uid://dpeamab1dsobi" path="res://Scripts/QTEOverlay.gd" id="1_wx0ju"]
+[ext_resource type="Script" uid="uid://dpeamab1dsobi" path="res://Scripts/QTEOverlay.gd" id="1_x7qdq"]
 
 [sub_resource type="Theme" id="Theme_w4m0g"]
 
@@ -12,7 +12,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_w4m0g")
-script = ExtResource("1_wx0ju")
+script = ExtResource("1_x7qdq")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1

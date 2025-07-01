@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b37707asq0ptt"
-path="res://.godot/imported/PAi.png-644c6bd7a12b82aa2593532c6a102fe7.ctex"
+uid="uid://b2x6hlus031ch"
+path="res://.godot/imported/planta.jpg-9b5ad1e248dc003249e03163b990b149.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Personagens/PAi.png"
-dest_files=["res://.godot/imported/PAi.png-644c6bd7a12b82aa2593532c6a102fe7.ctex"]
+source_file="res://Assets/planta.jpg"
+dest_files=["res://.godot/imported/planta.jpg-9b5ad1e248dc003249e03163b990b149.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dg3ev1qwavoy5"
-path="res://.godot/imported/crying-spongebob.jpg-e8224d1f4be0c5b4e1575a47ba02903f.ctex"
+uid="uid://ddye2pecapfc7"
+path="res://.godot/imported/room1background.png-db9d58139126910971ef1c268f129d59.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Personagens/crying-spongebob.jpg"
-dest_files=["res://.godot/imported/crying-spongebob.jpg-e8224d1f4be0c5b4e1575a47ba02903f.ctex"]
+source_file="res://Rooms/LivingRoom/room1background.png"
+dest_files=["res://.godot/imported/room1background.png-db9d58139126910971ef1c268f129d59.ctex"]
 
 [params]
 

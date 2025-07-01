@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ddyg38a5cp8ux"]
 
-[ext_resource type="Texture2D" uid="uid://iv70orjh3y3c" path="res://Assets/Personagens/pai2-Recovered-png.png" id="1_7l21y"]
+[ext_resource type="Texture2D" uid="uid://iv70orjh3y3c" path="res://Personagens/Pai/pai2-Recovered-png.png" id="1_7l21y"]
 
 [node name="Pai" type="Node2D"]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddye2pecapfc7"
-path="res://.godot/imported/room1background.png-b7fe5c96c87799d9129142a2d7e53d65.ctex"
+uid="uid://c06k3nqhcb3oh"
+path="res://.godot/imported/gato-laranja-chad.jpg-0d77bde3ed74d010d954418a0a4e4534.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Rooms/LivingRoom/room1background.png"
-dest_files=["res://.godot/imported/room1background.png-b7fe5c96c87799d9129142a2d7e53d65.ctex"]
+source_file="res://Assets/gato-laranja-chad.jpg"
+dest_files=["res://.godot/imported/gato-laranja-chad.jpg-0d77bde3ed74d010d954418a0a4e4534.ctex"]
 
 [params]
 

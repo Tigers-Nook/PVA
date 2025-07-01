@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://iv70orjh3y3c"
-path="res://.godot/imported/pai2-Recovered-png.png-7a92035b5ddff723adda8219134c1663.ctex"
+uid="uid://dg6ip5rbrdbpm"
+path="res://.godot/imported/plantinha.png-9558b8af43c90f6b2a49744a013f2a96.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Personagens/pai2-Recovered-png.png"
-dest_files=["res://.godot/imported/pai2-Recovered-png.png-7a92035b5ddff723adda8219134c1663.ctex"]
+source_file="res://Assets/plantinha.png"
+dest_files=["res://.godot/imported/plantinha.png-9558b8af43c90f6b2a49744a013f2a96.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bem1r20rddsjk"
-path="res://.godot/imported/gato-laranja-chad.webp-410c09eddf48477b16d3865ef029f1c9.ctex"
+path="res://.godot/imported/gato-laranja-chad.webp-4742005c7ec23f06fe272cc124ec993b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Personagens/gato-laranja-chad.webp"
-dest_files=["res://.godot/imported/gato-laranja-chad.webp-410c09eddf48477b16d3865ef029f1c9.ctex"]
+source_file="res://Assets/gato-laranja-chad.webp"
+dest_files=["res://.godot/imported/gato-laranja-chad.webp-4742005c7ec23f06fe272cc124ec993b.ctex"]
 
 [params]
 

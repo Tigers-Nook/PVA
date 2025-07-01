@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0xmgcmdx3j0g"
-path="res://.godot/imported/pngtree-blue-sofa-in-pixel-art-style-png-image_12528469.png-9b6f36995f2d96faa5974db152d465b2.ctex"
+uid="uid://bblobihixpslm"
+path="res://.godot/imported/pngtree-blue-sofa-in-pixel-art-style-png-image_12528469.png-5d9de68fe9dbc905ade6d56a9660723e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Scenario/pngtree-blue-sofa-in-pixel-art-style-png-image_12528469.png"
-dest_files=["res://.godot/imported/pngtree-blue-sofa-in-pixel-art-style-png-image_12528469.png-9b6f36995f2d96faa5974db152d465b2.ctex"]
+source_file="res://Assets/pngtree-blue-sofa-in-pixel-art-style-png-image_12528469.png"
+dest_files=["res://.godot/imported/pngtree-blue-sofa-in-pixel-art-style-png-image_12528469.png-5d9de68fe9dbc905ade6d56a9660723e.ctex"]
 
 [params]
 

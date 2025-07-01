@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5iqkcri1k60e"
-path="res://.godot/imported/salaDeEstar.png-71d92b245fd7aa9d649cc32950ed1c45.ctex"
+uid="uid://dg3ev1qwavoy5"
+path="res://.godot/imported/crying-spongebob.jpg-2c107be8a67a50354b35755a4dee0206.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Scenario/salaDeEstar.png"
-dest_files=["res://.godot/imported/salaDeEstar.png-71d92b245fd7aa9d649cc32950ed1c45.ctex"]
+source_file="res://UI/crying-spongebob.jpg"
+dest_files=["res://.godot/imported/crying-spongebob.jpg-2c107be8a67a50354b35755a4dee0206.ctex"]
 
 [params]
 

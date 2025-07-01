@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c06k3nqhcb3oh"
-path="res://.godot/imported/gato-laranja-chad.jpg-f9b31dac021ca85ce5ae11008fdd6019.ctex"
+uid="uid://b37707asq0ptt"
+path="res://.godot/imported/PAi.png-7db06e41bcfea278e50b42d084bd682d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Personagens/gato-laranja-chad.jpg"
-dest_files=["res://.godot/imported/gato-laranja-chad.jpg-f9b31dac021ca85ce5ae11008fdd6019.ctex"]
+source_file="res://Personagens/Pai/PAi.png"
+dest_files=["res://.godot/imported/PAi.png-7db06e41bcfea278e50b42d084bd682d.ctex"]
 
 [params]
 

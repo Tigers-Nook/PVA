@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cakpm8x7u6i38"
-path="res://.godot/imported/cenario1.png-7f5c53ac84fab43800ca4f1753c61801.ctex"
+uid="uid://dabv4jm35f15n"
+path="res://.godot/imported/guri_aranha.png-671044a49d800cacebf2d36ee2286cd1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Scenario/cenario1.png"
-dest_files=["res://.godot/imported/cenario1.png-7f5c53ac84fab43800ca4f1753c61801.ctex"]
+source_file="res://Personagens/Guri/guri_aranha.png"
+dest_files=["res://.godot/imported/guri_aranha.png-671044a49d800cacebf2d36ee2286cd1.ctex"]
 
 [params]
 

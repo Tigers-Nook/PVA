@@ -1,12 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://co6w2y1o7ffg8"]
+[gd_scene load_steps=7 format=3 uid="uid://co6w2y1o7ffg8"]
 
 [ext_resource type="Script" uid="uid://hfos6iqcmwk0" path="res://Scripts/Main.gd" id="1_kln2b"]
-[ext_resource type="PackedScene" uid="uid://buoqoyf8imjgc" path="res://Rooms/SalaDeEstar/LivingRoom.tscn" id="2_rgh2o"]
+[ext_resource type="PackedScene" uid="uid://buoqoyf8imjgc" path="res://Rooms/LivingRoom/LivingRoom.tscn" id="2_rgh2o"]
 [ext_resource type="PackedScene" uid="uid://b5fyqtaoetbv2" path="res://UI/game_interface.tscn" id="3_rgh2o"]
 [ext_resource type="PackedScene" uid="uid://bcyxu76a5tmcj" path="res://UI/qte_overlay.tscn" id="4_jw32o"]
 [ext_resource type="PackedScene" uid="uid://dekv060alsxpu" path="res://UI/game_over_screen.tscn" id="4_pbw6q"]
 [ext_resource type="PackedScene" uid="uid://b4khrexqcefr1" path="res://UI/victory_screen.tscn" id="7_50glp"]
-[ext_resource type="PackedScene" uid="uid://ddyg38a5cp8ux" path="res://Personagens/Pai/pai.tscn" id="9_vy5pj"]
 
 [node name="MainScene" type="Control"]
 layout_mode = 3
@@ -18,9 +17,10 @@ grow_vertical = 2
 script = ExtResource("1_kln2b")
 
 [node name="SalaDeEstar" parent="." instance=ExtResource("2_rgh2o")]
-position = Vector2(152, 0)
+position = Vector2(0, 8)
 
 [node name="Cozinha" parent="." instance=ExtResource("2_rgh2o")]
+visible = false
 
 [node name="Geladeira" type="Area2D" parent="Cozinha"]
 
@@ -41,9 +41,9 @@ offset_bottom = 128.0
 [node name="QTEOverlay" parent="." instance=ExtResource("4_jw32o")]
 
 [node name="GameOverScreen" parent="." instance=ExtResource("4_pbw6q")]
-
-[node name="Pai" parent="." instance=ExtResource("9_vy5pj")]
+visible = false
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
 [node name="VictoryScreen" parent="." instance=ExtResource("7_50glp")]
+visible = false

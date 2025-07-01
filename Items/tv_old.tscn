@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://dj65sqgqk2gt7"]
+
+[ext_resource type="Texture2D" uid="uid://rcwbm878ade7" path="res://Items/TV-removebg-preview.png" id="1_k2cm5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ijr7e"]
+size = Vector2(220.563, 130)
+
+[node name="TVold" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(920, 496)
+shape = SubResource("RectangleShape2D_ijr7e")
+debug_color = Color(0.241635, 0.636496, 0, 0.42)
+
+[node name="Button_Item" type="Button" parent="."]
+offset_left = 1224.0
+offset_top = 320.0
+offset_right = 1289.0
+offset_bottom = 351.0
+text = "Roubar"
+
+[node name="ArteItem" type="Sprite2D" parent="."]
+position = Vector2(888, 168)
+scale = Vector2(0.702628, 0.605196)
+texture = ExtResource("1_k2cm5")

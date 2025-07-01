@@ -113,10 +113,6 @@ layout_mode = 2
 
 [node name="Button_Navigation" type="Button" parent="Navigation2/VBoxContainer/NavigationButtons"]
 layout_mode = 2
-text = "COZINHA"
-
-[node name="Button_Navigation2" type="Button" parent="Navigation2/VBoxContainer/NavigationButtons"]
-layout_mode = 2
-text = "QUARTO DO CASAL"
+text = "GARAGEM"
 
 [node name="FamilyMoveTimer" type="Timer" parent="."]
