@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://buoqoyf8imjgc"]
+[gd_scene load_steps=11 format=3 uid="uid://buoqoyf8imjgc"]
 
 [ext_resource type="Texture2D" uid="uid://b5iqkcri1k60e" path="res://Rooms/LivingRoom/salaDeEstar.png" id="1_aaq88"]
 [ext_resource type="Texture2D" uid="uid://c0xmgcmdx3j0g" path="res://Rooms/LivingRoom/pngtree-blue-sofa-in-pixel-art-style-png-image_12528469.png" id="2_7gm67"]
@@ -9,15 +9,28 @@
 [ext_resource type="Texture2D" uid="uid://dg6ip5rbrdbpm" path="res://Assets/plantinha.png" id="6_4tcu6"]
 [ext_resource type="Texture2D" uid="uid://k08kcy47k8d2" path="res://Assets/moldura.png" id="8_ykbxs"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ykbxs"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ijr7e"]
 size = Vector2(220.563, 130)
 
-[node name="Sala" type="Node2D"]
+[node name="LivingRoom" type="Node2D"]
+
+[node name="Background2D" type="Sprite2D" parent="."]
+position = Vector2(897.25, 536)
+scale = Vector2(0.747708, 0.666945)
+texture = ExtResource("1_aaq88")
+
+[node name="Sofa" type="Sprite2D" parent="."]
+position = Vector2(1145.25, 616)
+scale = Vector2(1.53333, 1.25556)
+texture = ExtResource("2_7gm67")
 
 [node name="Itens" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Itens"]
 visible = false
+shape = SubResource("RectangleShape2D_ykbxs")
 
 [node name="Sprite2D" type="Sprite2D" parent="Itens"]
 
@@ -26,19 +39,6 @@ visible = false
 [node name="Button_navegar" type="Button" parent="."]
 offset_right = 8.0
 offset_bottom = 8.0
-
-[node name="Background2D" type="Sprite2D" parent="."]
-position = Vector2(897.25, 536)
-scale = Vector2(0.747708, 0.666945)
-texture = ExtResource("1_aaq88")
-
-[node name="Sofa" type="Area2D" parent="."]
-position = Vector2(153.25, 0)
-
-[node name="ArteSofa" type="Sprite2D" parent="Sofa"]
-position = Vector2(992, 616)
-scale = Vector2(1.53333, 1.25556)
-texture = ExtResource("2_7gm67")
 
 [node name="Button_navegar2" type="Button" parent="."]
 offset_left = 153.25
@@ -74,10 +74,6 @@ position = Vector2(1168, 856)
 scale = Vector2(0.721662, 0.703822)
 texture = ExtResource("5_2xb0k")
 
-[node name="Pai" parent="." instance=ExtResource("5_pc3qn")]
-position = Vector2(-96, -536)
-scale = Vector2(1.5, 1.5)
-
 [node name="Planta" type="Sprite2D" parent="."]
 position = Vector2(384, 520)
 scale = Vector2(1.86585, 1.93689)
@@ -87,3 +83,7 @@ texture = ExtResource("6_4tcu6")
 position = Vector2(859.75, 295.75)
 scale = Vector2(2.17111, 2.13556)
 texture = ExtResource("8_ykbxs")
+
+[node name="Pai" parent="." instance=ExtResource("5_pc3qn")]
+position = Vector2(-96, -536)
+scale = Vector2(1.5, 1.5)

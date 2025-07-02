@@ -16,7 +16,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_kln2b")
 
-[node name="SalaDeEstar" parent="." instance=ExtResource("2_rgh2o")]
+[node name="LivingRoom" parent="." instance=ExtResource("2_rgh2o")]
 position = Vector2(0, 8)
 
 [node name="Cozinha" parent="." instance=ExtResource("2_rgh2o")]
@@ -36,7 +36,7 @@ offset_top = 120.0
 offset_right = 288.0
 offset_bottom = 128.0
 
-[node name="GameInterface" parent="." instance=ExtResource("3_rgh2o")]
+[node name="GameUI" parent="." instance=ExtResource("3_rgh2o")]
 
 [node name="QTEOverlay" parent="." instance=ExtResource("4_jw32o")]
 
