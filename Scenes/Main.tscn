@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://co6w2y1o7ffg8"]
+[gd_scene load_steps=6 format=3 uid="uid://co6w2y1o7ffg8"]
 
 [ext_resource type="Script" uid="uid://hfos6iqcmwk0" path="res://Scripts/Main.gd" id="1_kln2b"]
 [ext_resource type="PackedScene" uid="uid://buoqoyf8imjgc" path="res://Rooms/LivingRoom/LivingRoom.tscn" id="2_rgh2o"]
-[ext_resource type="PackedScene" uid="uid://b5fyqtaoetbv2" path="res://UI/game_interface.tscn" id="3_rgh2o"]
 [ext_resource type="PackedScene" uid="uid://bcyxu76a5tmcj" path="res://UI/qte_overlay.tscn" id="4_jw32o"]
 [ext_resource type="PackedScene" uid="uid://dekv060alsxpu" path="res://UI/game_over_screen.tscn" id="4_pbw6q"]
 [ext_resource type="PackedScene" uid="uid://b4khrexqcefr1" path="res://UI/victory_screen.tscn" id="7_50glp"]
@@ -35,8 +34,6 @@ offset_left = 280.0
 offset_top = 120.0
 offset_right = 288.0
 offset_bottom = 128.0
-
-[node name="GameUI" parent="." instance=ExtResource("3_rgh2o")]
 
 [node name="QTEOverlay" parent="." instance=ExtResource("4_jw32o")]
 

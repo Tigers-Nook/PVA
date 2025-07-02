@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://buoqoyf8imjgc"]
+[gd_scene load_steps=12 format=3 uid="uid://buoqoyf8imjgc"]
 
 [ext_resource type="Texture2D" uid="uid://b5iqkcri1k60e" path="res://Rooms/LivingRoom/salaDeEstar.png" id="1_aaq88"]
 [ext_resource type="Texture2D" uid="uid://c0xmgcmdx3j0g" path="res://Rooms/LivingRoom/pngtree-blue-sofa-in-pixel-art-style-png-image_12528469.png" id="2_7gm67"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://ddyg38a5cp8ux" path="res://Personagens/Pai/pai.tscn" id="5_pc3qn"]
 [ext_resource type="Texture2D" uid="uid://dg6ip5rbrdbpm" path="res://Assets/plantinha.png" id="6_4tcu6"]
 [ext_resource type="Texture2D" uid="uid://k08kcy47k8d2" path="res://Assets/moldura.png" id="8_ykbxs"]
+[ext_resource type="PackedScene" uid="uid://b5fyqtaoetbv2" path="res://UI/game_ui.tscn" id="9_8xuxh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ykbxs"]
 
@@ -87,3 +88,5 @@ texture = ExtResource("8_ykbxs")
 [node name="Pai" parent="." instance=ExtResource("5_pc3qn")]
 position = Vector2(-96, -536)
 scale = Vector2(1.5, 1.5)
+
+[node name="GameUI" parent="." instance=ExtResource("9_8xuxh")]

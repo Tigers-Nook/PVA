@@ -1,8 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://xlvjb26h6qfm"]
+[gd_scene load_steps=3 format=3 uid="uid://xlvjb26h6qfm"]
 
 [ext_resource type="Texture2D" uid="uid://dabv4jm35f15n" path="res://Personagens/Guri/guri_aranha.png" id="1_x2640"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x2640"]
+size = Vector2(154, 218)
+
 [node name="Guri" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(1072, 528)
+shape = SubResource("RectangleShape2D_x2640")
 
 [node name="ArteGuri" type="Sprite2D" parent="."]
 position = Vector2(1064, 552)
