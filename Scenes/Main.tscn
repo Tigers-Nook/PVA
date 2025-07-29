@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://co6w2y1o7ffg8"]
+[gd_scene load_steps=9 format=3 uid="uid://co6w2y1o7ffg8"]
 
 [ext_resource type="Script" uid="uid://hfos6iqcmwk0" path="res://Scripts/Main.gd" id="1_kln2b"]
 [ext_resource type="PackedScene" uid="uid://buoqoyf8imjgc" path="res://Rooms/LivingRoom/LivingRoom.tscn" id="2_rgh2o"]
 [ext_resource type="PackedScene" uid="uid://bcyxu76a5tmcj" path="res://UI/qte_overlay.tscn" id="4_jw32o"]
 [ext_resource type="PackedScene" uid="uid://dekv060alsxpu" path="res://UI/game_over_screen.tscn" id="4_pbw6q"]
+[ext_resource type="AudioStream" uid="uid://bafutcwneee45" path="res://audio/gameplay_music.mp3" id="5_v1gob"]
 [ext_resource type="PackedScene" uid="uid://b4khrexqcefr1" path="res://UI/victory_screen.tscn" id="7_50glp"]
+[ext_resource type="PackedScene" uid="uid://k75h8xb6upv8" path="res://Scenes/menu.tscn" id="7_jw32o"]
+[ext_resource type="PackedScene" uid="uid://b5fyqtaoetbv2" path="res://UI/game_ui.tscn" id="8_50glp"]
 
 [node name="MainScene" type="Control"]
 layout_mode = 3
@@ -18,29 +21,20 @@ script = ExtResource("1_kln2b")
 [node name="LivingRoom" parent="." instance=ExtResource("2_rgh2o")]
 position = Vector2(0, 8)
 
-[node name="Cozinha" parent="." instance=ExtResource("2_rgh2o")]
-visible = false
-
-[node name="Geladeira" type="Area2D" parent="Cozinha"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Cozinha/Geladeira"]
-
-[node name="Sprite2D" type="Sprite2D" parent="Cozinha/Geladeira"]
-
-[node name="Background2" type="Sprite2D" parent="Cozinha"]
-
-[node name="Button_navegar3" type="Button" parent="Cozinha"]
-offset_left = 280.0
-offset_top = 120.0
-offset_right = 288.0
-offset_bottom = 128.0
-
 [node name="QTEOverlay" parent="." instance=ExtResource("4_jw32o")]
 
 [node name="GameOverScreen" parent="." instance=ExtResource("4_pbw6q")]
 visible = false
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-
 [node name="VictoryScreen" parent="." instance=ExtResource("7_50glp")]
 visible = false
+
+[node name="menu" parent="." instance=ExtResource("7_jw32o")]
+visible = false
+
+[node name="GameUI" parent="." instance=ExtResource("8_50glp")]
+
+[node name="GameplayMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_v1gob")
+autoplay = true
+parameters/looping = false

@@ -1,0 +1,39 @@
+[gd_scene load_steps=9 format=3 uid="uid://co6w2y1o7ffg8"]
+
+[ext_resource type="Script" uid="uid://hfos6iqcmwk0" path="res://Scripts/Main.gd" id="1_kln2b"]
+[ext_resource type="PackedScene" uid="uid://buoqoyf8imjgc" path="res://Rooms/LivingRoom/LivingRoom.tscn" id="2_rgh2o"]
+[ext_resource type="PackedScene" uid="uid://bcyxu76a5tmcj" path="res://UI/qte_overlay.tscn" id="4_jw32o"]
+[ext_resource type="PackedScene" uid="uid://dekv060alsxpu" path="res://UI/game_over_screen.tscn" id="4_pbw6q"]
+[ext_resource type="AudioStream" uid="uid://bafutcwneee45" path="res://Sound/tema tigrinho.mp3" id="5_v1gob"]
+[ext_resource type="PackedScene" uid="uid://b4khrexqcefr1" path="res://UI/victory_screen.tscn" id="7_50glp"]
+[ext_resource type="PackedScene" uid="uid://k75h8xb6upv8" path="res://Scenes/menu.tscn" id="7_jw32o"]
+[ext_resource type="PackedScene" uid="uid://b5fyqtaoetbv2" path="res://UI/game_ui.tscn" id="8_50glp"]
+
+[node name="MainScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kln2b")
+
+[node name="LivingRoom" parent="." instance=ExtResource("2_rgh2o")]
+position = Vector2(0, 8)
+
+[node name="QTEOverlay" parent="." instance=ExtResource("4_jw32o")]
+
+[node name="GameOverScreen" parent="." instance=ExtResource("4_pbw6q")]
+visible = false
+
+[node name="TemaTigrinho" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_v1gob")
+parameters/looping = false
+
+[node name="VictoryScreen" parent="." instance=ExtResource("7_50glp")]
+visible = false
+
+[node name="menu" parent="." instance=ExtResource("7_jw32o")]
+visible = false
+
+[node name="GameUI" parent="." instance=ExtResource("8_50glp")]

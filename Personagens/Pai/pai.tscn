@@ -5,6 +5,6 @@
 [node name="Pai" type="Node2D"]
 
 [node name="ArtePai" type="Sprite2D" parent="."]
-position = Vector2(704, 712)
-scale = Vector2(0.647619, 0.635714)
+position = Vector2(533.252, 788.752)
+scale = Vector2(0.376899, 0.349684)
 texture = ExtResource("1_7l21y")

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bqkr7hfo88od2"]
+[gd_scene load_steps=6 format=3 uid="uid://bqkr7hfo88od2"]
 
 [ext_resource type="PackedScene" uid="uid://k75h8xb6upv8" path="res://Scenes/menu.tscn" id="1_i04dx"]
 [ext_resource type="PackedScene" uid="uid://dekv060alsxpu" path="res://UI/game_over_screen.tscn" id="2_8pvmw"]
 [ext_resource type="PackedScene" uid="uid://b4khrexqcefr1" path="res://UI/victory_screen.tscn" id="3_vnucn"]
 [ext_resource type="PackedScene" uid="uid://co6w2y1o7ffg8" path="res://Scenes/Main.tscn" id="4_c3mwy"]
+[ext_resource type="PackedScene" uid="uid://c8eommsynybjn" path="res://Scenes/music_manager.tscn" id="5_4g5cr"]
 
 [node name="root" type="Node"]
 
@@ -22,3 +23,5 @@ offset_right = -280.0
 offset_bottom = 112.0
 
 [node name="MainScene" parent="." instance=ExtResource("4_c3mwy")]
+
+[node name="MusicManager" parent="." instance=ExtResource("5_4g5cr")]

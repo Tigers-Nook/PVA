@@ -19,25 +19,25 @@ var rooms = {
 	"livingRoom": {
 		"name": "Sala de Estar",
 		"items": {
-			"sofa": {"name": "Sofá", "value": 5, "found": false, "description": "Um sofá velho e empoeirado. Talvez haja algo entre as almofadas."},
-			"tv": {"name": "TV", "value": 0, "found": false, "description": "A TV está ligada. Ninguém está assistindo."},
+			"sofa": {"name": "Sofá", "value": 15, "found": false, "description": "Um sofá velho e empoeirado. Talvez haja algo entre as almofadas."},
+			"tv": {"name": "TV", "value": 50, "found": false, "description": "A TV está ligada. Ninguém está assistindo."},
 		},
 		"exits": ["kitchen", "bedroom"],
 	},
 	"kitchen": {
 		"name": "Cozinha",
 		"items": {
-			"cookieJar": {"name": "Pote de Biscoitos", "value": 2, "found": false, "description": "Um pote de biscoitos vazio. Que decepção."},
-			"fridge": {"name": "Geladeira", "value": 0, "found": false, "description": "Cheia de sobras. Nenhuma nota de dinheiro aqui."},
+			"cookieJar": {"name": "Pote de Biscoitos", "value": 0, "found": false, "description": "Um pote de biscoitos vazio. Que decepção."},
+			"fridge": {"name": "Geladeira", "value": 30, "found": false, "description": "Cheia de sobras. Nenhuma nota de dinheiro aqui."},
 		},
 		"exits": ["livingRoom"],
 	},
 	"bedroom": {
 		"name": "Quarto do Casal",
 		"items": {
-			"nightstand": {"name": "Mesa de Cabeceira", "value": 10, "found": false, "description": "Pode haver algum trocado aqui."},
-			"wardrobe": {"name": "Guarda-roupa", "value": 0, "found": false, "description": "Cheio de roupas velhas."},
-			"wifePurse": {"name": "Bolsa da Esposa", "value": 30, "found": false, "description": "A bolsa da sua esposa. Um risco alto, mas uma recompensa maior."},
+			"nightstand": {"name": "Mesa de Cabeceira", "value": 20, "found": false, "description": "Pode haver algum trocado aqui."},
+			"wardrobe": {"name": "Guarda-roupa", "value": 30, "found": false, "description": "Cheio de roupas velhas."},
+			"wifePurse": {"name": "Bolsa da Esposa", "value": 45, "found": false, "description": "A bolsa da sua esposa. Um risco alto, mas uma recompensa maior."},
 		},
 		"exits": ["livingRoom", "kidsRoom", "bathroom"],
 	},
@@ -45,7 +45,7 @@ var rooms = {
 		"name": "Quarto das Crianças",
 		"items": {
 			"piggyBank": {"name": "Cofre do Porquinho", "value": 20, "found": false, "description": "O cofre do porquinho das crianças. Que dilema moral..."},
-			"toyBox": {"name": "Caixa de Brinquedos", "value": 0, "found": false, "description": "Brinquedos espalhados por todo lado."},
+			"toyBox": {"name": "Caixa de Brinquedos", "value": 10, "found": false, "description": "Brinquedos espalhados por todo lado."},
 		},
 		"exits": ["bedroom"],
 	},
@@ -133,9 +133,11 @@ func reset_game_state():
 	# Randomiza a localização inicial da família, garantindo que não comece na sala de estar (livingRoom)
 	var room_keys = rooms.keys()
 	var new_family_location_key: String
-	do:
+
+	while true:
 		new_family_location_key = room_keys[randi() % room_keys.size()]
-	while new_family_location_key == "livingRoom" # Assumindo "livingRoom" como a sala inicial do jogador
+		if new_family_location_key != "livingRoom":
+			break
 	family_location = new_family_location_key
 
 	# Emite todos os sinais para garantir que a UI seja completamente atualizada.

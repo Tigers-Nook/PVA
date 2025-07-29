@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://clb1b5qaw57os"]
+
+[ext_resource type="Script" uid="uid://bboddny5688ka" path="res://Scripts/item_clicavel.gd" id="1_civcj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ykbxs"]
+
+[node name="Itens" type="Area2D"]
+script = ExtResource("1_civcj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_ykbxs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="RoubarBtn" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="pressed" from="RoubarBtn" to="." method="_on_button_pressed"]

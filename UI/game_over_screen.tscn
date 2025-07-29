@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://dekv060alsxpu"]
+[gd_scene load_steps=2 format=3 uid="uid://dekv060alsxpu"]
+
+[ext_resource type="Script" uid="uid://dyu1jcyn5b5u0" path="res://UI/game_over_screen.gd" id="1_50k4i"]
 
 [node name="GameOverScreen" type="Control"]
 layout_mode = 3
@@ -7,21 +9,33 @@ offset_left = 72.0
 offset_top = -80.0
 offset_right = 112.0
 offset_bottom = -40.0
+script = ExtResource("1_50k4i")
 
 [node name="GameOverMessage" type="Label" parent="."]
 layout_mode = 0
 offset_left = 408.0
-offset_top = 272.0
+offset_top = 256.0
 offset_right = 676.0
-offset_bottom = 321.0
+offset_bottom = 305.0
 text = "PERDEU!
 Você foi pego roubando... Canalha!"
 horizontal_alignment = 1
 
-[node name="RetartGameButton" type="Button" parent="."]
+[node name="RestartGameButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 424.0
 offset_top = 336.0
 offset_right = 656.0
 offset_bottom = 423.0
 text = "Jogar Novamente"
+
+[node name="MainMenuBtn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 448.0
+offset_right = 656.0
+offset_bottom = 535.0
+text = "Menu Inicial"
+
+[connection signal="pressed" from="RestartGameButton" to="." method="_on_retart_game_button_pressed"]
+[connection signal="pressed" from="MainMenuBtn" to="." method="_on_main_menu_btn_pressed"]

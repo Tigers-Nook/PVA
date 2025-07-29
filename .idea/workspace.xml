@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07c4ad75-bf83-4f06-8e7a-481853a7ebbf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Personagens/Garoto_Aranha_Jogando.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Personagens/PAi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Personagens/PAi.png.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Personagens/crying-spongebob.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Personagens/crying-spongebob.jpg.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Personagens/garoto_aranha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Personagens/garoto_aranha.png.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Personagens/gato-laranja-chad.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Personagens/gato-laranja-chad.jpg.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Personagens/gato-laranja-chad.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Personagens/gato-laranja-chad.webp.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Personagens/pai2-Recovered-png.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Personagens/pai2-Recovered-png.png.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Personagens/pai2-Recovered.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Puzzles/Tomada_anima.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rooms/LivingRoom/room1background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rooms/LivingRoom/room1background.png.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenario/cenario1.png.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenario/pngtree-blue-sofa-in-pixel-art-style-png-image_12528469.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenario/pngtree-blue-sofa-in-pixel-art-style-png-image_12528469.png.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenario/salaDeEstar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenario/salaDeEstar.png.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Personagens/Guri/guri.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Personagens/Guri/guri.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Personagens/Pai/pai.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Personagens/Pai/pai.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rooms/SalaDeEstar/LivingRoom.tscn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Main.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Main.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/root.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/root.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/QTEOverlay.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/UI/QTEOverlay.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI/game_interface.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/UI/game_interface.tscn" afterDir="false" />
-    </list>
+    <list default="true" id="07c4ad75-bf83-4f06-8e7a-481853a7ebbf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,18 +10,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Maylon-hub"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Maylon-hub&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Tigers-Nook/PVA.git",
-    "accountId": "ab20cead-2602-4269-b6b0-98a49bf886d5"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Tigers-Nook/PVA.git&quot;,
+    &quot;accountId&quot;: &quot;ab20cead-2602-4269-b6b0-98a49bf886d5&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -65,7 +35,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "M3X",
+    "git-widget-placeholder": "main",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -73,8 +43,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.26927.90" />
+        <option value="bundled-python-sdk-41e8cd69c857-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.90" />
       </set>
     </attachedChunks>
   </component>
@@ -87,6 +57,7 @@
       <updated>1750871783609</updated>
       <workItem from="1750871790018" duration="6000" />
       <workItem from="1751394024839" duration="45000" />
+      <workItem from="1753060834005" duration="48000" />
     </task>
     <servers />
   </component>
