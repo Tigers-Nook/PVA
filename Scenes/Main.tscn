@@ -19,7 +19,7 @@ grow_vertical = 2
 script = ExtResource("1_kln2b")
 
 [node name="LivingRoom" parent="." instance=ExtResource("2_rgh2o")]
-position = Vector2(0, 8)
+position = Vector2(-1, 0)
 
 [node name="QTEOverlay" parent="." instance=ExtResource("4_jw32o")]
 

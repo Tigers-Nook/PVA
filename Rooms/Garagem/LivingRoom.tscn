@@ -1,0 +1,87 @@
+[gd_scene load_steps=12 format=3 uid="uid://dvtocx6jbuqa6"]
+
+[ext_resource type="Script" uid="uid://bmo22fbesgo3i" path="res://Scripts/living_room.gd" id="1_wxxom"]
+[ext_resource type="Texture2D" uid="uid://b5iqkcri1k60e" path="res://Rooms/LivingRoom/salaDeEstar.png" id="2_1d18f"]
+[ext_resource type="Texture2D" uid="uid://c0xmgcmdx3j0g" path="res://Rooms/LivingRoom/pngtree-blue-sofa-in-pixel-art-style-png-image_12528469.png" id="3_uyuks"]
+[ext_resource type="PackedScene" uid="uid://clb1b5qaw57os" path="res://Scenes/ItemClicavel.tscn" id="4_oyb66"]
+[ext_resource type="Texture2D" uid="uid://cxmw3ur1jgsl" path="res://Items/TV_e_rack-removebg-preview.png" id="5_fae4e"]
+[ext_resource type="PackedScene" uid="uid://xlvjb26h6qfm" path="res://Personagens/Guri/guri.tscn" id="6_y6kkj"]
+[ext_resource type="Texture2D" uid="uid://ci7oro7mcod6r" path="res://Assets/rug.png" id="7_7ow80"]
+[ext_resource type="Texture2D" uid="uid://dg6ip5rbrdbpm" path="res://Assets/plantinha.png" id="8_ew02s"]
+[ext_resource type="Texture2D" uid="uid://k08kcy47k8d2" path="res://Assets/moldura.png" id="9_h7k5r"]
+[ext_resource type="PackedScene" uid="uid://ddyg38a5cp8ux" path="res://Personagens/Pai/pai.tscn" id="10_rn05r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ijr7e"]
+size = Vector2(220.563, 130)
+
+[node name="LivingRoom" type="Node2D"]
+script = ExtResource("1_wxxom")
+
+[node name="Background2D" type="TextureRect" parent="."]
+offset_right = 2000.0
+offset_bottom = 1342.0
+scale = Vector2(0.8, 0.673472)
+texture = ExtResource("2_1d18f")
+expand_mode = 2
+
+[node name="Sofa" type="Sprite2D" parent="."]
+position = Vector2(992, 512)
+scale = Vector2(1.53333, 1.25556)
+texture = ExtResource("3_uyuks")
+
+[node name="Itens" parent="." instance=ExtResource("4_oyb66")]
+
+[node name="Background" type="Sprite2D" parent="."]
+
+[node name="Button_navegar" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button_navegar2" type="Button" parent="."]
+offset_left = 200.0
+offset_right = 208.0
+offset_bottom = 8.0
+
+[node name="TV2" type="Area2D" parent="."]
+position = Vector2(296, 64)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TV2"]
+visible = false
+position = Vector2(920, 496)
+shape = SubResource("RectangleShape2D_ijr7e")
+debug_color = Color(0.241635, 0.636496, 0, 0.42)
+
+[node name="ArteItem" type="Sprite2D" parent="TV2"]
+position = Vector2(1048, 440)
+scale = Vector2(2.31878, 1.58702)
+texture = ExtResource("5_fae4e")
+
+[node name="Button_Item" type="Button" parent="TV2"]
+visible = false
+offset_left = 1064.0
+offset_top = 520.0
+offset_right = 1129.0
+offset_bottom = 551.0
+text = "Roubar"
+
+[node name="Guri" parent="." instance=ExtResource("6_y6kkj")]
+position = Vector2(-64, -48)
+
+[node name="Tapete" type="Sprite2D" parent="."]
+position = Vector2(1024, 728)
+scale = Vector2(0.721662, 0.703822)
+texture = ExtResource("7_7ow80")
+
+[node name="Planta" type="Sprite2D" parent="."]
+position = Vector2(336, 432)
+scale = Vector2(1.40122, 1.4733)
+texture = ExtResource("8_ew02s")
+
+[node name="QuadroParede" type="Sprite2D" parent="."]
+position = Vector2(816, 240)
+scale = Vector2(2.17111, 2.13556)
+texture = ExtResource("9_h7k5r")
+
+[node name="Pai" parent="." instance=ExtResource("10_rn05r")]
+position = Vector2(-224, -448)
+scale = Vector2(1.5, 1.5)
