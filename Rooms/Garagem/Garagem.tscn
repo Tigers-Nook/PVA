@@ -1,11 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://dvtocx6jbuqa6"]
+[gd_scene load_steps=11 format=3 uid="uid://dvtocx6jbuqa6"]
 
-[ext_resource type="Script" uid="uid://bmo22fbesgo3i" path="res://Scripts/living_room.gd" id="1_wxxom"]
+[ext_resource type="Script" uid="uid://dakodb4lbvqhf" path="res://Scripts/Garagem.gd" id="1_x3lg0"]
 [ext_resource type="Texture2D" uid="uid://b5iqkcri1k60e" path="res://Rooms/LivingRoom/salaDeEstar.png" id="2_1d18f"]
 [ext_resource type="Texture2D" uid="uid://c0xmgcmdx3j0g" path="res://Rooms/LivingRoom/pngtree-blue-sofa-in-pixel-art-style-png-image_12528469.png" id="3_uyuks"]
 [ext_resource type="PackedScene" uid="uid://clb1b5qaw57os" path="res://Scenes/ItemClicavel.tscn" id="4_oyb66"]
 [ext_resource type="Texture2D" uid="uid://cxmw3ur1jgsl" path="res://Items/TV_e_rack-removebg-preview.png" id="5_fae4e"]
-[ext_resource type="PackedScene" uid="uid://xlvjb26h6qfm" path="res://Personagens/Guri/guri.tscn" id="6_y6kkj"]
 [ext_resource type="Texture2D" uid="uid://ci7oro7mcod6r" path="res://Assets/rug.png" id="7_7ow80"]
 [ext_resource type="Texture2D" uid="uid://dg6ip5rbrdbpm" path="res://Assets/plantinha.png" id="8_ew02s"]
 [ext_resource type="Texture2D" uid="uid://k08kcy47k8d2" path="res://Assets/moldura.png" id="9_h7k5r"]
@@ -14,8 +13,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ijr7e"]
 size = Vector2(220.563, 130)
 
-[node name="LivingRoom" type="Node2D"]
-script = ExtResource("1_wxxom")
+[node name="Garagem" type="Node2D"]
+script = ExtResource("1_x3lg0")
 
 [node name="Background2D" type="TextureRect" parent="."]
 offset_right = 2000.0
@@ -63,9 +62,6 @@ offset_top = 520.0
 offset_right = 1129.0
 offset_bottom = 551.0
 text = "Roubar"
-
-[node name="Guri" parent="." instance=ExtResource("6_y6kkj")]
-position = Vector2(-64, -48)
 
 [node name="Tapete" type="Sprite2D" parent="."]
 position = Vector2(1024, 728)

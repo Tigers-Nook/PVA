@@ -57,6 +57,9 @@ var rooms = {
 		"exits": ["bedroom"],
 	},
 }
+#Garagem 
+
+
 
 # --- Sinais para Observadores da UI (ex: Main Scene) ---
 # Emitem eventos quando o estado do jogo muda, permitindo que a UI se atualize.

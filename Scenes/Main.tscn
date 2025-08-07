@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://co6w2y1o7ffg8"]
+[gd_scene load_steps=10 format=3 uid="uid://co6w2y1o7ffg8"]
 
 [ext_resource type="Script" uid="uid://hfos6iqcmwk0" path="res://Scripts/Main.gd" id="1_kln2b"]
 [ext_resource type="PackedScene" uid="uid://buoqoyf8imjgc" path="res://Rooms/LivingRoom/LivingRoom.tscn" id="2_rgh2o"]
+[ext_resource type="PackedScene" uid="uid://dvtocx6jbuqa6" path="res://Rooms/Garagem/Garagem.tscn" id="3_vy5pj"]
 [ext_resource type="PackedScene" uid="uid://bcyxu76a5tmcj" path="res://UI/qte_overlay.tscn" id="4_jw32o"]
 [ext_resource type="PackedScene" uid="uid://dekv060alsxpu" path="res://UI/game_over_screen.tscn" id="4_pbw6q"]
 [ext_resource type="AudioStream" uid="uid://bafutcwneee45" path="res://audio/gameplay_music.mp3" id="5_v1gob"]
@@ -20,6 +21,8 @@ script = ExtResource("1_kln2b")
 
 [node name="LivingRoom" parent="." instance=ExtResource("2_rgh2o")]
 position = Vector2(-1, 0)
+
+[node name="Garagem" parent="." instance=ExtResource("3_vy5pj")]
 
 [node name="QTEOverlay" parent="." instance=ExtResource("4_jw32o")]
 
