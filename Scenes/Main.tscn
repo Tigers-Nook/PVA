@@ -1,10 +1,20 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=6 format=3 uid="uid://co6w2y1o7ffg8"]
+=======
+[gd_scene load_steps=10 format=3 uid="uid://co6w2y1o7ffg8"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Script" uid="uid://hfos6iqcmwk0" path="res://Scripts/Main.gd" id="1_kln2b"]
 [ext_resource type="PackedScene" uid="uid://buoqoyf8imjgc" path="res://Rooms/LivingRoom/LivingRoom.tscn" id="2_rgh2o"]
 [ext_resource type="PackedScene" uid="uid://bcyxu76a5tmcj" path="res://UI/qte_overlay.tscn" id="4_jw32o"]
 [ext_resource type="PackedScene" uid="uid://dekv060alsxpu" path="res://UI/game_over_screen.tscn" id="4_pbw6q"]
 [ext_resource type="PackedScene" uid="uid://b4khrexqcefr1" path="res://UI/victory_screen.tscn" id="7_50glp"]
+<<<<<<< Updated upstream
+=======
+[ext_resource type="PackedScene" uid="uid://k75h8xb6upv8" path="res://Scenes/menu.tscn" id="7_jw32o"]
+[ext_resource type="PackedScene" uid="uid://b5fyqtaoetbv2" path="res://UI/game_ui.tscn" id="8_50glp"]
+[ext_resource type="PackedScene" uid="uid://d3nyhgs6213sr" path="res://Rooms/Cozinha/Cozinha.tscn" id="9_vy5pj"]
+>>>>>>> Stashed changes
 
 [node name="MainScene" type="Control"]
 layout_mode = 3
@@ -16,7 +26,9 @@ grow_vertical = 2
 script = ExtResource("1_kln2b")
 
 [node name="LivingRoom" parent="." instance=ExtResource("2_rgh2o")]
-position = Vector2(0, 8)
+
+[node name="Cozinha" parent="." instance=ExtResource("9_vy5pj")]
+visible = false
 
 [node name="Cozinha" parent="." instance=ExtResource("2_rgh2o")]
 visible = false

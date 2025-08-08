@@ -56,6 +56,8 @@ var rooms = {
 		},
 		"exits": ["bedroom"],
 	},
+	
+	
 }
 
 # --- Sinais para Observadores da UI (ex: Main Scene) ---

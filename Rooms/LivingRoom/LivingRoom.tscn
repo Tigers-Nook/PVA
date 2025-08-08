@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b5iqkcri1k60e" path="res://Rooms/LivingRoom/salaDeEstar.png" id="1_aaq88"]
 [ext_resource type="Texture2D" uid="uid://c0xmgcmdx3j0g" path="res://Rooms/LivingRoom/pngtree-blue-sofa-in-pixel-art-style-png-image_12528469.png" id="2_7gm67"]
 [ext_resource type="Texture2D" uid="uid://cxmw3ur1jgsl" path="res://Items/TV_e_rack-removebg-preview.png" id="3_xebr5"]
-[ext_resource type="PackedScene" uid="uid://xlvjb26h6qfm" path="res://Personagens/Guri/guri.tscn" id="4_2xb0k"]
+[ext_resource type="PackedScene" uid="uid://bbdr5rem0mocy" path="res://Personagens/Guri/guri.tscn" id="4_2xb0k"]
 [ext_resource type="Texture2D" uid="uid://ci7oro7mcod6r" path="res://Assets/rug.png" id="5_2xb0k"]
 [ext_resource type="PackedScene" uid="uid://ddyg38a5cp8ux" path="res://Personagens/Pai/pai.tscn" id="5_pc3qn"]
 [ext_resource type="Texture2D" uid="uid://dg6ip5rbrdbpm" path="res://Assets/plantinha.png" id="6_4tcu6"]
@@ -16,13 +16,25 @@
 size = Vector2(220.563, 130)
 
 [node name="LivingRoom" type="Node2D"]
+<<<<<<< Updated upstream
 
 [node name="Background2D" type="Sprite2D" parent="."]
 position = Vector2(897.25, 536)
 scale = Vector2(0.747708, 0.666945)
+=======
+position = Vector2(-8, 0)
+script = ExtResource("1_2qjb7")
+
+[node name="Background2D" type="TextureRect" parent="."]
+offset_left = 8.0
+offset_right = 2008.0
+offset_bottom = 1342.0
+scale = Vector2(0.8, 0.673472)
+>>>>>>> Stashed changes
 texture = ExtResource("1_aaq88")
 
 [node name="Sofa" type="Sprite2D" parent="."]
+<<<<<<< Updated upstream
 position = Vector2(1145.25, 616)
 scale = Vector2(1.53333, 1.25556)
 texture = ExtResource("2_7gm67")
@@ -36,6 +48,14 @@ shape = SubResource("RectangleShape2D_ykbxs")
 [node name="Sprite2D" type="Sprite2D" parent="Itens"]
 
 [node name="Background" type="Sprite2D" parent="."]
+=======
+position = Vector2(952, 472)
+scale = Vector2(1.53333, 1.25556)
+texture = ExtResource("2_7gm67")
+
+[node name="Itens" parent="." instance=ExtResource("3_pjlcw")]
+position = Vector2(560, 112)
+>>>>>>> Stashed changes
 
 [node name="Button_navegar" type="Button" parent="."]
 offset_right = 8.0
@@ -67,15 +87,21 @@ offset_right = 1399.75
 offset_bottom = 639.0
 text = "Roubar"
 
+<<<<<<< Updated upstream
 [node name="Guri" parent="." instance=ExtResource("4_2xb0k")]
 position = Vector2(153.25, 0)
 
 [node name="Tapete" type="Sprite2D" parent="."]
 position = Vector2(1168, 856)
+=======
+[node name="Tapete" type="Sprite2D" parent="."]
+position = Vector2(1040, 712)
+>>>>>>> Stashed changes
 scale = Vector2(0.721662, 0.703822)
 texture = ExtResource("5_2xb0k")
 
 [node name="Planta" type="Sprite2D" parent="."]
+<<<<<<< Updated upstream
 position = Vector2(384, 520)
 scale = Vector2(1.86585, 1.93689)
 texture = ExtResource("6_4tcu6")
@@ -83,10 +109,26 @@ texture = ExtResource("6_4tcu6")
 [node name="QuadroParede" type="Sprite2D" parent="."]
 position = Vector2(859.75, 295.75)
 scale = Vector2(2.17111, 2.13556)
+=======
+position = Vector2(368, 440)
+scale = Vector2(1.40122, 1.4733)
+texture = ExtResource("6_4tcu6")
+
+[node name="QuadroParede" type="Sprite2D" parent="."]
+position = Vector2(569.875, 243.875)
+scale = Vector2(1.90333, 1.81445)
+>>>>>>> Stashed changes
 texture = ExtResource("8_ykbxs")
 
+[node name="Guri" parent="." instance=ExtResource("4_2xb0k")]
+position = Vector2(1184, 528)
+
 [node name="Pai" parent="." instance=ExtResource("5_pc3qn")]
+<<<<<<< Updated upstream
 position = Vector2(-96, -536)
+=======
+position = Vector2(-240, -456)
+>>>>>>> Stashed changes
 scale = Vector2(1.5, 1.5)
 
 [node name="GameUI" parent="." instance=ExtResource("9_8xuxh")]

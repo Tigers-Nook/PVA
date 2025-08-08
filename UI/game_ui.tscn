@@ -1,4 +1,33 @@
+<<<<<<< Updated upstream
 [gd_scene format=3 uid="uid://b5fyqtaoetbv2"]
+=======
+[gd_scene load_steps=6 format=3 uid="uid://b5fyqtaoetbv2"]
+
+[ext_resource type="Script" uid="uid://cfrm68r4isi7u" path="res://UI/game_ui.gd" id="1_mp46i"]
+[ext_resource type="Texture2D" uid="uid://cadrn8hxwnk3u" path="res://Assets/SETATIGRE.png" id="2_kfjql"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h0rig"]
+atlas = ExtResource("2_kfjql")
+region = Rect2(0, 0, 35, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2oifk"]
+atlas = ExtResource("2_kfjql")
+region = Rect2(35, 0, 35, 25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dbpsm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h0rig")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2oifk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+>>>>>>> Stashed changes
 
 [node name="GameUI" type="Control"]
 layout_mode = 3
@@ -116,3 +145,16 @@ layout_mode = 2
 text = "GARAGEM"
 
 [node name="FamilyMoveTimer" type="Timer" parent="."]
+
+[node name="Navegar" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Navegar"]
+position = Vector2(160, 592)
+scale = Vector2(6.53571, 6.33)
+sprite_frames = SubResource("SpriteFrames_dbpsm")
+autoplay = "default"
+frame_progress = 0.578806
+
+[node name="Button" type="Button" parent="Navegar"]
+offset_right = 8.0
+offset_bottom = 8.0

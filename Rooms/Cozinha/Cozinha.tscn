@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3nyhgs6213sr"]
+
+[ext_resource type="Texture2D" uid="uid://d3ee4162ivhw5" path="res://Rooms/Cozinha/cozinha.jpg" id="1_nsckq"]
+[ext_resource type="PackedScene" uid="uid://clb1b5qaw57os" path="res://Scenes/ItemClicavel.tscn" id="4_nk0fu"]
+[ext_resource type="PackedScene" uid="uid://ddyg38a5cp8ux" path="res://Personagens/Pai/pai.tscn" id="10_obrvf"]
+
+[node name="Cozinha" type="Node2D"]
+position = Vector2(-8, 0)
+
+[node name="Background2D" type="TextureRect" parent="."]
+offset_left = 8.0
+offset_right = 2008.0
+offset_bottom = 1342.0
+scale = Vector2(0.8, 0.673472)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_nsckq")
+expand_mode = 2
+
+[node name="Itens" parent="." instance=ExtResource("4_nk0fu")]
+
+[node name="Background" type="Sprite2D" parent="."]
+
+[node name="Button_navegar" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button_navegar2" type="Button" parent="."]
+offset_left = 200.0
+offset_right = 208.0
+offset_bottom = 8.0
+
+[node name="Pai" parent="." instance=ExtResource("10_obrvf")]
+position = Vector2(-344, -432)
+scale = Vector2(1.5, 1.5)

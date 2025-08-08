@@ -1,10 +1,42 @@
-[gd_scene load_steps=2 format=3 uid="uid://ddyg38a5cp8ux"]
+[gd_scene load_steps=5 format=3 uid="uid://ddyg38a5cp8ux"]
 
-[ext_resource type="Texture2D" uid="uid://iv70orjh3y3c" path="res://Personagens/Pai/pai2-Recovered-png.png" id="1_7l21y"]
+[ext_resource type="Texture2D" uid="uid://b37707asq0ptt" path="res://Personagens/Pai/Pai-idle.png" id="2_qihcn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qihcn"]
+atlas = ExtResource("2_qihcn")
+region = Rect2(0, 0, 73, 86)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l78da"]
+atlas = ExtResource("2_qihcn")
+region = Rect2(73, 0, 73, 86)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qwuv0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qihcn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l78da")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
 
 [node name="Pai" type="Node2D"]
 
+<<<<<<< Updated upstream
 [node name="ArtePai" type="Sprite2D" parent="."]
 position = Vector2(704, 712)
 scale = Vector2(0.647619, 0.635714)
 texture = ExtResource("1_7l21y")
+=======
+[node name="anim" type="AnimatedSprite2D" parent="."]
+position = Vector2(673.109, 749.844)
+scale = Vector2(3.69563, 3.48474)
+sprite_frames = SubResource("SpriteFrames_qwuv0")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.654507
+>>>>>>> Stashed changes
