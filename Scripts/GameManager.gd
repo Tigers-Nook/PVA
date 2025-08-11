@@ -21,6 +21,7 @@ var rooms = {
 		"items": {
 			"sofa": {"name": "Sofá", "value": 15, "found": false, "description": "Um sofá velho e empoeirado. Talvez haja algo entre as almofadas."},
 			"tv": {"name": "TV", "value": 50, "found": false, "description": "A TV está ligada. Ninguém está assistindo."},
+			"fancy potted plant":{"name":"Vaso chique de planta","value": 40,"found": false,"description":"Herança da sua sogra, que coisa feia!" }
 		},
 		"exits": ["kitchen", "bedroom"],
 	},
@@ -29,6 +30,7 @@ var rooms = {
 		"items": {
 			"cookieJar": {"name": "Pote de Biscoitos", "value": 0, "found": false, "description": "Um pote de biscoitos vazio. Que decepção."},
 			"fridge": {"name": "Geladeira", "value": 30, "found": false, "description": "Cheia de sobras. Nenhuma nota de dinheiro aqui."},
+			"dining table":{"name":"Mesa de jantar","value":150,"found":false,"description":"Boa! Vai comer no chão agora?"}
 		},
 		"exits": ["livingRoom"],
 	},
@@ -45,7 +47,8 @@ var rooms = {
 		"name": "Quarto das Crianças",
 		"items": {
 			"piggyBank": {"name": "Cofre do Porquinho", "value": 20, "found": false, "description": "O cofre do porquinho das crianças. Que dilema moral..."},
-			"toyBox": {"name": "Caixa de Brinquedos", "value": 10, "found": false, "description": "Brinquedos espalhados por todo lado."},
+			"Rare pokemon card": {"name": "Cartinha de pokemon rara ", "value": 10, "found": false, "description": "Seu filho demorou tanto para encontrar "},
+			"patched soccer ball":{"name":"bola de futebol remendada","value": 0,"found": false, "description": "Tá perdoando nada mesmo viu " }
 		},
 		"exits": ["bedroom"],
 	},
@@ -56,8 +59,18 @@ var rooms = {
 		},
 		"exits": ["bedroom"],
 	},
+	
+	"Garage":{
+		"name":"Garagem",
+		"items":{
+			"bicycle":{"name":"Bicicleta", "value":100, "found":false,"description":"Teve sorte! Um cara qualquer aceitou uma compra rápida"},
+			"tool box":{"name":"Caixa de ferramentas","value":0,"found":false, "description":"Apenas ferramentas para consertos "},
+		},
+		
+		"exits":["livingroom"],
+	}
 }
-#Garagem 
+
 
 
 
