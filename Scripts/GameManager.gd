@@ -19,26 +19,26 @@ var rooms = {
 	"livingRoom": {
 		"name": "Sala de Estar",
 		"items": {
-			"sofa": {"name": "Sofá", "value": 15, "found": false, "description": "Um sofá velho e empoeirado. Talvez haja algo entre as almofadas."},
+			"lampshade": {"name": "abajur", "value": 15, "found": false, "description": "Um abajur velho todo empoeirado, talvez de algum dinhero"},
 			"tv": {"name": "TV", "value": 50, "found": false, "description": "A TV está ligada. Ninguém está assistindo."},
-			"fancy potted plant":{"name":"Vaso chique de planta","value": 40,"found": false,"description":"Herança da sua sogra, que coisa feia!" }
+			"fancy potted plant":{"name":"Vaso chique de planta","value": 40,"found": false,"description":"Ninguém vai perceber mesmo" }
 		},
 		"exits": ["kitchen", "bedroom"],
 	},
 	"kitchen": {
 		"name": "Cozinha",
 		"items": {
-			"cookieJar": {"name": "Pote de Biscoitos", "value": 0, "found": false, "description": "Um pote de biscoitos vazio. Que decepção."},
-			"fridge": {"name": "Geladeira", "value": 30, "found": false, "description": "Cheia de sobras. Nenhuma nota de dinheiro aqui."},
-			"dining table":{"name":"Mesa de jantar","value":150,"found":false,"description":"Boa! Vai comer no chão agora?"}
+			"microwave": {"name": "microondas", "value": 40, "found": false, "description": "Seu presente de casamento, que coisa feia!"},
+			"blender": {"name": "liquidificador", "value": 20, "found": false, "description": "Cheia de sobras. Nenhuma nota de dinheiro aqui."},
+			"dining table":{"name":"Mesa de jantar","value":50,"found":false,"description":"Boa! Vai comer no chão agora?"}
 		},
 		"exits": ["livingRoom"],
 	},
 	"bedroom": {
 		"name": "Quarto do Casal",
 		"items": {
-			"nightstand": {"name": "Mesa de Cabeceira", "value": 20, "found": false, "description": "Pode haver algum trocado aqui."},
-			"wardrobe": {"name": "Guarda-roupa", "value": 30, "found": false, "description": "Cheio de roupas velhas."},
+			"cell phone": {"name": "Celular", "value": 20, "found": false, "description": "Ainda bem que roda roblox nesse tijolo ainda, senão não daria para vender!"},
+			"wardrobe": {"name": "Guarda-roupa", "value": 0, "found": false, "description": "Cheio de roupas velhas."},
 			"wifePurse": {"name": "Bolsa da Esposa", "value": 45, "found": false, "description": "A bolsa da sua esposa. Um risco alto, mas uma recompensa maior."},
 		},
 		"exits": ["livingRoom", "kidsRoom", "bathroom"],
@@ -46,16 +46,28 @@ var rooms = {
 	"kidsRoom": {
 		"name": "Quarto das Crianças",
 		"items": {
-			"piggyBank": {"name": "Cofre do Porquinho", "value": 20, "found": false, "description": "O cofre do porquinho das crianças. Que dilema moral..."},
+			"video game": {"name": "Vídeo game", "value": 30, "found": false, "description": "O video game de seu filho. Que dilema moral..."},
 			"Rare pokemon card": {"name": "Cartinha de pokemon rara ", "value": 10, "found": false, "description": "Seu filho demorou tanto para encontrar "},
 			"patched soccer ball":{"name":"bola de futebol remendada","value": 0,"found": false, "description": "Tá perdoando nada mesmo viu " }
 		},
 		"exits": ["bedroom"],
 	},
+	
+	"mother-in-law's room":{
+		"name": "Quarto da sogra",
+		"items":{
+			"Bengal":{"name":"Bengala","value":0,"found":false,"description":"Se dependesse de você a sua sogra estaria no azilo né?"},
+			"deceased father-in-law's wedding ring":{"name":"Aliança do sogro falecido","value": 50,"found":false,"description":"Depois não se assuste quando ele vier te assombrar!"},
+			"envelope with money to play the mega sena":{"name": "envelope com dinheiro para jogar na mega sena","value":40,"found":false,"description":"Se deixasse quieto, poderia até ter ganhado mais"}
+		},
+		"exits":["bathroom"]
+	},
 	"bathroom": {
 		"name": "Banheiro",
 		"items": {
-			"medicineCabinet": {"name": "Armário de Remédios", "value": 0, "found": false, "description": "Apenas remédios e produtos de higiene."},
+			"Dryer": {"name": "Secador", "value": 15, "found": false, "description": "Sua mulher vai te bater!"},
+			"toothbrush":{"name":"Escova de dente", "value": 0,"found": false, "description": "Vai fazer o que? Escovar a dentadura da sua sogra?"},
+			"shampoo":{"name":"shampoo","value":5,"found":false, "description":"Produtos Ivone né queridos!"}
 		},
 		"exits": ["bedroom"],
 	},
